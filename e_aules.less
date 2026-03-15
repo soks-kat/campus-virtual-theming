@@ -1,0 +1,65 @@
+/* ==UserStyle==
+@name           sso.uab.cat
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+@preprocessor less
+@var select colourfull "Colourfull" ["gay:Gay*", "clean:Clean"]
+@var select colourscheme "Colourscheme" ["catppuccin:Catppuccin*", "kanagawa:Kanagawa", "trans:Trans", "gaymer:Gaymer", "custom:Custom"]
+==/UserStyle==*/
+@import (optional) "http://127.0.0.1:3011/custom.less";
+@-moz-document domain("sso.uab.cat") {
+    @import "https://bertran.xyz/media/colors.less";
+    :root{
+        --enllac: var(--link);
+        --enllac-hover: var(--link-b);
+        --cas-theme-primary: var(--secondary);
+        --cas-theme-svg-fill: var(--text);        
+    }
+    
+    .cls-1, .cls-2 {
+        fill: var(--primary);
+    }
+    
+    body {
+        color: var(--text);
+        background: var(--background);
+    }
+    h1 {
+        color: var(--primary);
+    }
+    h1:after {
+        background: var(--primary);
+    }
+    .page-content {
+        border-radius: var(--border-radius);
+        background: var(--background-light);
+    }
+    .btn-primary {
+        color: var(--gay, var(--text-dark)) var(--clean, var(--primary));
+        background: var(--gay, var(--primary)) var(--clean, #282828);
+        border-radius: var(--border-radius);
+        border-width: 0px;
+    }
+    .btn-primary:hover {
+        background: var(--primary-b);
+        border-width: 0px;
+        color: var(--text-dark);
+    }
+    .btn-primary:focus {
+        background: var(--primary-b);
+        border-width: 0px !important;
+        color: var(--text-dark);
+        box-shadow: none;
+    }
+    footer {
+        background: var(--background-light);
+    }
+    footer li a {
+        color: var(--text);
+    }
+    #selectorIdioma {
+        display: none;
+    }
+}
