@@ -11,7 +11,8 @@ Colourfull which includes: Gay (a more colourfull theming) and Clean (a more min
 
 Colourscheme which includes: Catppuccin, Kanagawa, Trans and Gaymer and Custom which you can set by localhosting at port **3011** a file called `custom.less` which must follow this format
 
-```@custom: {
+```
+@custom: {
     @background: #1e1e2e;
     @background-light: #2d2c3e;
     @background-lighter: #45475a;
@@ -43,7 +44,8 @@ Colourscheme which includes: Catppuccin, Kanagawa, Trans and Gaymer and Custom w
 
     @link: #89b4fa;
     @link-b: #6c99e2;
-};```
+};
+```
 
 
 ![campus-virtual](./imgs/campus-virtual.png)
