@@ -1,7 +1,7 @@
 # Instalation
 For both of the below installation methods, you will need the Stylus browser extension installed. Install [Stylus](https://github.com/openstyles/stylus) for [Chrome](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?pli=1) or [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/styl-us/). If you use Chrome, make sure to enable “Allow access to file URLs” in the Chrome extension settings for Stylus (`visit chrome://extensions/?id=clngdbkpkpeebahjckkjfobafhncgmne`).
 
-Enable CSP Patching from Stylus’s **Settings > Advanced**.
+Go to the Stylus settings and navigate to **Settings > Advanced**. Enable `Patch CSP to allow style assets` and `Open installer when navigating to a .user.css URL`
 [Install the style](https://raw.githubusercontent.com/soks-kat/campus-virtual-theming/refs/heads/main/e_aules.user.less)
 
 # Usage

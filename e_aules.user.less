@@ -10,8 +10,9 @@
 @var select colourscheme "Colourscheme" ["catppuccin:Catppuccin*", "kanagawa:Kanagawa", "trans:Trans", "gaymer:Gaymer", "custom:Custom"]
 ==/UserStyle==*/
 @import (optional) "http://127.0.0.1:3011/custom.less";
-@import "https://bertran.xyz/media/colors.less";
+@import "https://bertran.xyz/media/colors.less?v=2";
 @-moz-document domain("cv.uab.cat"){
+    
     :root{ 
         /*website variables*/
         --color-marca-primari: var(--primary);
@@ -50,7 +51,7 @@
 
     body{
         background: var(--background);
-        // background: var(--back);
+        /* background: var(--back); */
         color: var(--text);   
     }
     
@@ -482,6 +483,20 @@
         filter: drop-shadow(10000px 0 0 var(--gay, var(--text-dark)) var(--clean, var(--test))) !important;
         transform: translateX(-10000px);
     }
+    
+    .activityiconcontainer.smaller.other,               
+    .activityiconcontainer.smaller.administration {
+        background: var(--gay, var(--anuncis)) var(--clean, var(--background-light));
+        border-radius: var(--border-radius);
+    }
+    /*[data-id="416484"] .activityicon {*/
+    img.activityicon {
+        filter: drop-shadow(10000px 0 0 var(--gay, var(--text-dark)) var(--clean, var(--anuncis))) !important;
+        transform: translateX(-10000px);
+    }
+    .activityiconcontainer.smaller.administration .activityicon {
+        width: 25px;
+    }
 
     /*top bar*/
     .userinitials {
@@ -728,7 +743,9 @@
     .path-mod-assign div.earlysubmission,
     .path-mod-assign td.submissionstatussubmitted,
     .path-mod-assign div.submissionstatussubmitted,
-    .path-mod-assign a:link.submissionstatussubmitted {
+    .path-mod-assign a:link.submissionstatussubmitted,
+    .path-mod-assign td.submissiongraded,
+    {
         color: var(--gay, var(--text-dark)) var(--clean, var(--green)) !important;
         background-color: var(--gay, var(--green))  var(--clean, var(--background));
     }
@@ -828,7 +845,7 @@
     }
     .course-card .card-img-top, .theme-card .card-img-top, .card-img-bottom {
         display: var(--gay, block) var(--clean, none);
-        border-radius-top: var(--border-radius);
+        border-radius: var(--border-radius);
         background-image: none !important;
     }
     .block .block-cards .progress-text {
